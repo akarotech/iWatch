@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--List-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="List" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <table alignment="left" id="Bdc-0l-Xbf">
+                            <items>
+                                <tableRow identifier="nameCell" id="tH4-Qy-7sE" customClass="TableRowName">
+                                    <group key="rootItem" width="1" alignment="left" id="Hg8-JI-ts2">
+                                        <items>
+                                            <imageView width="30" height="30" alignment="left" verticalAlignment="center" image="profile" contentMode="scaleAspectFill" id="tKq-I3-UyE"/>
+                                            <group width="100" alignment="right" layout="vertical" id="ZNt-Na-0rb">
+                                                <items>
+                                                    <label width="95" height="17" alignment="left" text="Rakesh Kumar" textAlignment="right" id="d10-4U-c3C">
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                    <label width="95" height="12" alignment="left" verticalAlignment="bottom" text="Rakesh Kumar" textAlignment="right" id="w6P-ia-Rei">
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="font" type="italicSystem" pointSize="10"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="imgProfile" destination="tKq-I3-UyE" id="NTn-SD-cSn"/>
+                                        <outlet property="lblDesignation" destination="w6P-ia-Rei" id="KII-v7-uf1"/>
+                                        <outlet property="lblName" destination="d10-4U-c3C" id="sTM-1b-Py6"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="tblNames" destination="Bdc-0l-Xbf" id="p7Q-cV-SDu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="175" y="267"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="Oeu-5i-NdX">
+            <objects>
+                <controller identifier="DetailsInterfaceController" title="Details" id="4ZU-aZ-OEb" customClass="DetailsInterfaceController">
+                    <items>
+                        <group width="1" height="151" alignment="left" layout="vertical" id="fc6-rj-lmx">
+                            <items>
+                                <imageView width="100" height="106" alignment="center" contentMode="scaleAspectFit" id="Ecn-Lq-b9G"/>
+                                <label width="120" alignment="center" text="Label" textAlignment="center" id="DQL-od-Yp6">
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                                <label width="120" alignment="center" text="Software Engineer" textAlignment="center" id="6an-lz-Zh3">
+                                    <fontDescription key="font" type="italicSystem" pointSize="12"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="5" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="imgProfile" destination="Ecn-Lq-b9G" id="y40-z2-xge"/>
+                        <outlet property="lblDesignation" destination="6an-lz-Zh3" id="1Qa-Kb-do8"/>
+                        <outlet property="lblName" destination="DQL-od-Yp6" id="euM-xJ-kD3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="357" y="269"/>
+        </scene>
+    </scenes>
+</document>
